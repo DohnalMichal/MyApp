@@ -10,7 +10,7 @@
     android:paddingRight="16dp">
 
         <TextView
-            android:id="@+id/tvVzdalenost"
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -55,34 +55,76 @@
             android:textSize="14sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/splitMM"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_height="50dp"
             android:layout_below="@+id/tvSplit"
-            android:layout_toLeftOf="@+id/times"
-            android:hint="@string/mm"
-            android:textAlignment="textEnd"
-            tools:ignore="RtlHardcoded" />
+            android:orientation="horizontal"
+            android:id="@+id/LinearSplit">
 
-        <EditText
-            android:id="@+id/splitSS"
+                <EditText
+                    android:id="@+id/splitMM"
+                    android:layout_width="158dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/mm"
+                    android:textAlignment="textEnd"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dvojtecka" />
+
+                <EditText
+                    android:id="@+id/splitSS"
+                    android:layout_width="158dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/ss"
+                    tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/cas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tvSplit"
-            android:hint="@string/ss"
-            android:layout_alignParentRight="true"
-            android:layout_toRightOf="@+id/splitMM"
-            tools:ignore="RtlHardcoded" />
+            android:text="Čas"
+            android:layout_below="@+id/LinearSplit"
+            android:textStyle="bold"/>
 
-        <Spinner
-            android:id="@id/times"
-            android:layout_width="96dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/splitSS"
-            android:layout_alignParentRight="true"
-            tools:ignore="RtlHardcoded" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cas"
+            android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/splitMM"
+                    android:layout_width="158dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/mm"
+                    android:textAlignment="textEnd"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dvojtecka" />
+
+                <EditText
+                    android:id="@+id/splitSS"
+                    android:layout_width="158dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/ss"
+                    tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+
 
 
 </RelativeLayout>
