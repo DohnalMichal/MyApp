@@ -9,4 +9,11 @@
     <string name="vek">Age</string>
     <string name="vyska">Height</string>
     <string name="jmeno">Name</string>
+    <string name="etVzdalenost">Distance</string>
+    <string name="split">Calculate 500 metres split</string>
+    <string name="tvVzdalenost">Distance</string>
+    <string name="vzdalenost">Distance</string>
+    <string name="zavody">Race</string>
+    <string name="kalkulacka">Pace calculator</string>
+    <string name="bSpocitejVzdalnost">Calculate distance</string>
 </resources>
