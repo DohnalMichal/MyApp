@@ -63,7 +63,7 @@
         android:layout_below="@+id/vek"
         android:ems="10"
         android:hint="@string/vyska"
-        android:inputType="number" />
+        android:inputType="number"/>
 
     <EditText
         android:id="@+id/vaha"

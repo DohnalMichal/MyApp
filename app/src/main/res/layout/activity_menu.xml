@@ -14,18 +14,19 @@
         android:id="@+id/kalkulacka"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/kalkulacka"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:text="@string/kalkulacka" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
 
     <Button
         android:id="@+id/zavody"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
         android:text="@string/zavody"
         android:layout_below="@+id/kalkulacka"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
 </RelativeLayout>

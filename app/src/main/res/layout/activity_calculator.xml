@@ -9,20 +9,56 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvVzdalenost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/tvVzdalenost"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
         <EditText
             android:id="@+id/etVzdalenost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/etVzdalenost"
-            android:textAlignment="center"/>
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/tvVzdalenost"
+            android:layout_marginTop="36dp"
+            android:hint="Metry"
+            android:textAlignment="center" />
 
         <Button
-            android:id="@+id/bSpocitejVzdalenost"
+                android:id="@+id/bSpocitejVzdalenost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etVzdalenost"
+                android:text="@string/bSpocitejVzdalnost"/>
+
+        <TextView
+            android:id="@+id/tvSplit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/etVzdalenost"
-            android:text="@string/bSpocitejVzdalnost" />
-
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/bSpocitejVzdalenost"
+            android:layout_marginTop="20dp"
+            android:text="Čas na 500 metrů"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
 
 </RelativeLayout>
