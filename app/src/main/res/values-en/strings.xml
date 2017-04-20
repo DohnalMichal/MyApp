@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="heslo">Password</string>
+    <string name="prezdivka">Nickname</string>
+    <string name="prihlaseni">Login</string>
+    <string name="registrace">Register</string>
+    <string name="vaha">Weight</string>
+    <string name="vek">Age</string>
+    <string name="vyska">Height</string>
+    <string name="jmeno">Name</string>
+</resources>

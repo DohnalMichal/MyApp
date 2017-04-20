@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dohny.myapplication.RegisterActivity">
+
+    <EditText
+        android:id="@+id/jmeno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="@string/jmeno"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/prezdivka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/jmeno"
+        android:ems="10"
+        android:hint="@string/prezdivka"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/heslo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/prezdivka"
+        android:ems="10"
+        android:hint="@string/heslo"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/vek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/heslo"
+        android:ems="10"
+        android:hint="@string/vek"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/vyska"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/vek"
+        android:ems="10"
+        android:hint="@string/vyska"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/vaha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/vaha"
+        android:inputType="number"
+        android:layout_below="@+id/vyska"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/registrace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:text="@string/registrace"
+        android:layout_below="@+id/vyska"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
