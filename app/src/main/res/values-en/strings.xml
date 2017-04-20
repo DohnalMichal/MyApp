@@ -16,4 +16,6 @@
     <string name="zavody">Race</string>
     <string name="kalkulacka">Pace calculator</string>
     <string name="bSpocitejVzdalnost">Calculate distance</string>
+    <string name="ss">SS</string>
+    <string name="mm">MM</string>
 </resources>

@@ -9,27 +9,18 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/tvVzdalenost"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
-
-                <TextView
-                    android:id="@+id/tvVzdalenost"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="20dp"
-                    android:text="@string/tvVzdalenost"
-                    android:textAlignment="textStart"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-        </LinearLayout>
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/tvVzdalenost"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/etVzdalenost"
@@ -40,15 +31,16 @@
             android:layout_alignParentTop="true"
             android:layout_below="@+id/tvVzdalenost"
             android:layout_marginTop="36dp"
-            android:hint="Metry"
-            android:textAlignment="center" />
+            android:hint="@string/metry"
+            android:textAlignment="center"
+            tools:ignore="HardcodedText" />
 
         <Button
-                android:id="@+id/bSpocitejVzdalenost"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/etVzdalenost"
-                android:text="@string/bSpocitejVzdalnost"/>
+            android:id="@+id/bSpocitejVzdalenost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etVzdalenost"
+            android:text="@string/bSpocitejVzdalnost"/>
 
         <TextView
             android:id="@+id/tvSplit"
@@ -67,24 +59,30 @@
             android:id="@+id/splitMM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvSplit"
-            android:hint="MM"
             android:layout_alignParentLeft="true"
-            android:layout_toLeftOf="@+id/times"/>
+            android:layout_below="@+id/tvSplit"
+            android:layout_toLeftOf="@+id/times"
+            android:hint="@string/mm"
+            android:textAlignment="textEnd"
+            tools:ignore="RtlHardcoded" />
+
         <EditText
             android:id="@+id/splitSS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tvSplit"
-            android:hint="SS"
+            android:hint="@string/ss"
             android:layout_alignParentRight="true"
-            android:layout_toRightOf="@+id/splitMM" />
+            android:layout_toRightOf="@+id/splitMM"
+            tools:ignore="RtlHardcoded" />
+
         <Spinner
             android:id="@id/times"
             android:layout_width="96dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/splitSS"
-            android:layout_alignParentRight="true" />
+            android:layout_alignParentRight="true"
+            tools:ignore="RtlHardcoded" />
 
 
 </RelativeLayout>
