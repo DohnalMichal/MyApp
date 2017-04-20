@@ -13,5 +13,9 @@ public class MenuActivity extends AppCompatActivity {
         final Button kalkulacka = (Button) findViewById(R.id.kalkulacka);
         final Button zavody = (Button) findViewById(R.id.zavody);
 
+
+
+
+
     }
 }
