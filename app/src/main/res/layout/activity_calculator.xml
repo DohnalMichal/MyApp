@@ -46,13 +46,14 @@
             android:id="@+id/etVzdalenost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:layout_marginTop="36dp"
             android:hint="@string/metry"
+            android:inputType="number"
             android:textAlignment="center"
-            tools:ignore="HardcodedText"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            tools:ignore="HardcodedText" />
 
         <Button
             android:id="@+id/bSpocitejVzdalenost"
@@ -87,6 +88,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="@string/mm"
+                    android:inputType="number"
                     android:textAlignment="textEnd"
                     tools:ignore="RtlHardcoded" />
 
@@ -101,6 +103,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="@string/ss"
+                    android:inputType="number"
                     tools:ignore="RtlHardcoded" />
 
         </LinearLayout>
@@ -141,6 +144,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="@string/mm"
+                    android:inputType="number"
                     android:textAlignment="textEnd"
                     tools:ignore="RtlHardcoded" />
 
@@ -155,6 +159,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="@string/ss"
+                    android:inputType="number"
                     tools:ignore="RtlHardcoded" />
 
         </LinearLayout>

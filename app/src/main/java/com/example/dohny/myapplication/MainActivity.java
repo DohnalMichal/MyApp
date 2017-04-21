@@ -25,5 +25,13 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(registraceIntent);
             }
         });
+
+        prihlaseni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent prihlaseniIntent = new Intent(MainActivity.this, MenuActivity.class);
+                MainActivity.this.startActivity(prihlaseniIntent);
+            }
+        });
     }
 }
