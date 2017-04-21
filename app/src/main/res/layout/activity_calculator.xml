@@ -21,11 +21,12 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
 
                         <TextView
                             android:id="@+id/textView"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
@@ -35,7 +36,8 @@
                             android:text="@string/tvVzdalenost"
                             android:textAlignment="textStart"
                             android:textSize="14sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="ObsoleteLayoutParam" />
                 </LinearLayout>
 
         </LinearLayout>
@@ -111,7 +113,6 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/LinearSplit"
-            android:layout_weight="1"
             android:text="@string/split" />
 
         <TextView
@@ -122,7 +123,7 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/bSpocitejSplit"
             android:layout_marginTop="20dp"
-            android:text="Čas"
+            android:text="@string/cas"
             android:textAlignment="textStart"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -166,7 +167,8 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/LinearCas"
             android:layout_weight="1"
-            android:text="@string/split" />
+            android:text="@string/split"
+            tools:ignore="ObsoleteLayoutParam" />
 
 
 </RelativeLayout>
