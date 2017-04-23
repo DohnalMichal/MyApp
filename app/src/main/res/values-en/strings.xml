@@ -19,4 +19,7 @@
     <string name="ss">SS</string>
     <string name="mm">MM</string>
     <string name="dvojtecka">:</string>
+    <string name="cas">Time</string>
+    <string name="metry">meters</string>
+    <string name="bSpocitejCas">Calculate time</string>
 </resources>

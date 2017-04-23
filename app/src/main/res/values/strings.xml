@@ -20,5 +20,6 @@
     <string name="metry">metry</string>
     <string name="dvojtecka">:</string>
     <string name="cas">Čas</string>
+    <string name="bSpocitejCas">Spočítej čas</string>
 
 </resources>

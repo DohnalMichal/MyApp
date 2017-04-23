@@ -25,7 +25,7 @@
                     tools:ignore="UselessParent">
 
                         <TextView
-                            android:id="@+id/textView"
+                            android:id="@+id/tvVzdalenost"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -46,21 +46,24 @@
             android:id="@+id/etVzdalenost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginTop="36dp"
             android:hint="@string/metry"
             android:inputType="number"
             android:textAlignment="center"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <Button
             android:id="@+id/bSpocitejVzdalenost"
+            android:onClick="distanceClicked"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/etVzdalenost"
-            android:text="@string/bSpocitejVzdalnost"/>
+            android:text="@string/bSpocitejVzdalnost"
+            android:layout_below="@+id/etVzdalenost"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <TextView
             android:id="@+id/tvSplit"
@@ -76,11 +79,11 @@
             android:textStyle="bold" />
 
         <LinearLayout
+            android:id="@+id/LinearSplit"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@+id/tvSplit"
-            android:orientation="horizontal"
-            android:id="@+id/LinearSplit">
+            android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/splitMM"
@@ -111,12 +114,14 @@
 
         <Button
             android:id="@+id/bSpocitejSplit"
+            android:onClick="splitClicked"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/split"
+            android:layout_below="@+id/tvSplit"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/LinearSplit"
-            android:text="@string/split" />
+            android:layout_marginTop="42dp" />
 
         <TextView
             android:id="@+id/tvCas"
@@ -166,14 +171,16 @@
 
         <Button
             android:id="@+id/bSpocitejCas"
+            android:onClick="timeClicked"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/bSpocitejCas"
+            tools:ignore="ObsoleteLayoutParam"
+            android:layout_below="@+id/tvCas"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/LinearCas"
-            android:layout_weight="1"
-            android:text="@string/split"
-            tools:ignore="ObsoleteLayoutParam" />
+            android:layout_marginTop="42dp" />
 
 
 </RelativeLayout>
